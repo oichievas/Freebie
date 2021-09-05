@@ -5,9 +5,17 @@ button{
     padding: 7px 24px;
     text-align: center;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
+button:hover{
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
 
+img{
+  width: 100%;
+}
 
 
 /* root */
@@ -60,7 +68,9 @@ header {
     width: 50%;
 }
 .banner_info{
-    padding: 10% 5%;
+  padding-top: 10% ;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .banner_info h1{
@@ -83,12 +93,69 @@ header {
     padding: 23px 35px;
 }
 
+.banner_btn{
+  padding-bottom: 100px;
+}
+
 .second_banner{
     flex-direction: row-reverse;
 }
 
+.second_banner .banner_title{
+  font-size: 32px;
+  line-height: 140.62%;
+}
 
+.btn_more{
+  color: #F7941E !important;
+  background-color: #F1F1F2 !important;
+}
 
+.gifts {
+  padding: 100px 5%;
+}
+
+.gift_title{
+  text-align: center;
+  font-size: 32px;
+  line-height: 38px;  
+  padding-bottom: 60px;
+}
+
+.gift_subtitle{
+  font-size: 18px;
+}
+
+.gift_card{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  width: 100%;
+}
+
+.gift_card .card{
+  background-color: #FAFAFA;
+  box-shadow: 0 0 20px rgba(54, 47, 47, 0.2);
+}
+
+.card_info{
+  padding: 24px;
+}
+
+.card_info p{
+  font-size: 20px;
+  line-height: 24px;
+  padding-bottom: 70px;
+}
+
+.card_info button {
+  font-size: 14px;
+  line-height: 19px;
+  border: none;
+  text-transform: capitalize;
+  background-color: #fff;
+  padding: 0;
+}
 
 
 
@@ -99,25 +166,49 @@ header {
 /* media */
 
 @media screen and (max-width: 1140px) {
-    .container {
-      width: 992px;
-    }
+    
   }
   @media screen and (max-width: 992px) {
-    .container {
-      width: 768px;
-    }
+    .banner_info {
+      padding-top: 3% ;
+      padding-left: 5%;
+      padding-right: 5%;
+  }
   }
   @media screen and (max-width: 768px) {
-    .container {
-      width: 576px;
-    }
+    .banner_info h1{
+      font-size: 40px;
+      line-height: 39px;
+      padding-bottom: 10px;
+  }
+
+  .banner_info .banner_btn{
+    padding: 10px 15px;
+  }
+
+  .second_banner .banner_title{
+    line-height: 0%;
+  }
+  .banner_info .banner_subtitle{
+    padding-bottom: 6px;
+  }
   }
   @media screen and (max-width: 576px) {
-    .container {
-      width: 100%;
-      padding: 0px 1rem;
+    .banner_wrap{
+      flex-direction: column;
     }
+
+    .banner_info, .banner_photo{
+      width: 100%;
+    }
+
+  .banner_wrap{
+    flex-direction: column-reverse;
+  }
+
+  .banner_info{
+    padding-bottom: 50px;
+  }
   }
 
 /* media */
