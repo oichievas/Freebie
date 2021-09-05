@@ -155,18 +155,163 @@ header {
   text-transform: capitalize;
   background-color: #fff;
   padding: 0;
+  box-shadow: none;
+  line-height: 2;
 }
 
+.card_info button:hover {
+  text-decoration: underline;
+  
+}
 
+.ready {
+  background-color: #F7941E;
+  padding: 50px 0;
+}
 
+.ready_wrap{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
 
+.ready_title {
+  font-size: 32px;
+  line-height: 140.62%;
+}
+.ready_title h4 {
+  font-weight: 600;
+}
 
+.ready_title p {
+  font-weight: 500;
+}
+
+.ready_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ready_buttons button {
+  padding: 18px 25px;
+}
+
+.ready_buttons button:first-child{
+  background-color: #231F20;
+  color: #fff;
+  margin-right: 16px;
+}
+
+.ready_buttons button:last-child{
+  color: #000;
+  border: 1px solid #000;
+}
+
+/* blog */
+
+.blog {
+  padding: 80px 5%;
+}
+
+.blog_title {
+  text-align: center;
+}
+
+.blog_title h5{
+  padding-bottom: 23px;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.blog_title p{
+  font-size: 18px;
+  line-height: 135.94%;
+}
+
+.blog_image {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  color: #fff;
+  padding-top: 71px;
+  padding-bottom: 40px;
+}
+
+.image_text {
+  padding: 5% 7%;
+  background-color: #231F20;
+}
+
+.image_text small {
+  font-size: 14px;
+  line-height: 140.62%;
+}
+
+.image_text .big_text {
+  font-size: 48px;
+  line-height: 58px;
+  padding-top: 27px;
+  padding-bottom: 60px;
+}
+
+.image_more {
+  font-size: 18px;
+  background-color: #231F20;
+  border: none;
+  color: #fff;
+  padding: 0;
+  text-transform:capitalize;
+}
+
+.image_more:hover{
+  text-decoration: underline;
+}
+/* blog */
+
+/* reviews */
+
+.reviews_wrap{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.reviews_block {
+  box-shadow: 0 0 10px rgba(196, 189, 189, 0.5);
+  padding: 48px;
+}
+
+.reviews_title {
+  font-size: 24px;
+  line-height: 140.62%;
+  font-weight: 600;
+}
+
+.review_p{
+  padding-top: 16px;
+  padding-bottom: 32px;
+}
+
+.more_review{
+  background-color: #fff;
+  border: none;
+  text-transform:capitalize;
+  padding: 0;
+}
+
+.more_review:hover {
+  box-shadow: none;
+  text-decoration: underline;
+}
+/* reviews */
 
 
 /* media */
 
 @media screen and (max-width: 1140px) {
-    
+  .image_text {
+    padding: 3% 5%;
+  }
   }
   @media screen and (max-width: 992px) {
     .banner_info {
@@ -174,12 +319,29 @@ header {
       padding-left: 5%;
       padding-right: 5%;
   }
+
+  .image_text {
+    padding: 7px 4%;
   }
+
+  .image_text .big_text {
+    font-size: 36px;
+    padding-bottom: 20px;
+  }
+}
   @media screen and (max-width: 768px) {
     .banner_info h1{
       font-size: 40px;
       line-height: 39px;
       padding-bottom: 10px;
+  }
+  .banner_info p {
+    font-size: 17px;
+  }
+
+  .banner_info .banner_btn {
+    line-height: 18px;
+    font-size: 15px;
   }
 
   .banner_info .banner_btn{
@@ -192,6 +354,32 @@ header {
   .banner_info .banner_subtitle{
     padding-bottom: 6px;
   }
+
+  .gift_card{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ready_wrap {
+    flex-direction: column;
+  }
+
+  .ready_title {
+    padding-bottom: 20px;
+  }
+
+  .image_text {
+    padding: 7px 4%;
+  }
+
+  .image_text .big_text {
+    font-size: 26px;
+    padding-top: 10px;
+  }
+
+  .reviews_wrap {
+    display: block;
+  }
+
   }
   @media screen and (max-width: 576px) {
     .banner_wrap{
@@ -208,6 +396,18 @@ header {
 
   .banner_info{
     padding-bottom: 50px;
+  }
+
+  .gift_card{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .image_text {
+    padding: 20px;
+  }
+
+  .blog_image{
+    display: block;
   }
   }
 
