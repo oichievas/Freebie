@@ -305,6 +305,41 @@ header {
 }
 /* reviews */
 
+/* footer */
+
+footer {
+  background-color: #FAFAFA;
+  text-align: center;
+  padding-bottom: 35px;
+}
+
+.container .menu {
+  border-bottom: 1px solid #000;
+}
+
+.container .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 140.62%;
+  padding: 7% 15% 25px 15%;
+  font-weight: 600;
+}
+
+.footer_logos ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.footer_logos ul li {
+  padding-right: 2%;
+}
+
+
+/* footer */
 
 /* media */
 
@@ -382,6 +417,20 @@ header {
 
   }
   @media screen and (max-width: 576px) {
+    .navbar {
+      display: block;
+    }
+
+    .nav_logo {
+      width: 70px;
+      margin: 0 auto;
+    }
+  
+    .nav_btn{
+      display: flex;
+      justify-content: center;
+    }
+
     .banner_wrap{
       flex-direction: column;
     }
