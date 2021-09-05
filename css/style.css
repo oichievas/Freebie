@@ -394,6 +394,10 @@ header {
     flex-direction: column-reverse;
   }
 
+  .banner_photo img {
+    margin-bottom: 16px;
+  }
+
   .banner_info{
     padding-bottom: 50px;
   }
